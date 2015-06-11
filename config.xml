@@ -20,7 +20,7 @@
 
 
   <icon src="icon.png" gap:platform="android" width="1024" height="1024" />
-
+  <preference name="splash-screen-duration" value="70000"/>
   <gap:splash src="screen/screen-xhdpi-portrait.png" />
   <gap:splash src="screen/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
   <gap:splash src="screen/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
