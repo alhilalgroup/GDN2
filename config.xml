@@ -2,13 +2,12 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.gdnonline.m"
-    version     = "1.1.1" >
+    version     = "1.1.2" >
 
   <name>GDN Online</name>
-  <content src="www/index.html" />
-  <access origin="www" />
+ 
   <description>
-    GDN Online is the GCC’s most dynamic digital news source providing a selected mix of local, regional and international news and features to a readership across the Gulf countries and internationally. The website offers compelling and extensive content which includes local and regional input from The Gulf Daily News, the region’s oldest daily newspaper. GDNonline provides the paper’s readers with an extensive online edition adapted to be accessed on all available technological platforms.
+    GDN Online is the GCC’s most dynamic digital news source providing a selected mix of local, regional and international news and features to a readership across the Gulf countries and internationally. 
   </description>
 
   <author href="http://m.gdnonline.com" email="binju@northstar.bh">
@@ -22,11 +21,11 @@
 
   <icon src="icon.png" gap:platform="android" width="1024" height="1024" />
 
-  <gap:splash src="platforms/android/assets/screen/screen-xhdpi-portrait.png" />
-  <gap:splash src="platforms/android/assets/screen/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-  <gap:splash src="platforms/android/assets/screen/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-  <gap:splash src="platforms/android/assets/screen/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-  <gap:splash src="platforms/android/assets/screen/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+  <gap:splash src="screen/screen-xhdpi-portrait.png" />
+  <gap:splash src="screen/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+  <gap:splash src="screen/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="screen/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="screen/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
 
 
 
