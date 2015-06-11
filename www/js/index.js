@@ -1,9 +1,13 @@
 ﻿jQuery(document).ready(function () {
 
+    var rownum = 0;
     jQuery.getJSON('http://cdn.gdnonline.com/homenews?jsoncallback=?', function (data) {
         var contenthtml = '';
+
+        
+
         jQuery.each(data, function (key, value) {
-            contenthtml += '<div class="container no-bottom"> ';
+            contenthtml += '<div style="clear:both" class="container no-bottom"> ';
             contenthtml += '<img onclick="javascript:window.location.href=\'details.html?id=' + data[key].article_id + ' \'"   src="http://www.gdnonline.com/gdnimages/' + data[key].mime_type_source.replace('.jpg', '_t.jpg').replace('.JPG', '_t.jpg') + '" alt="img" class="timg left"> ';
             contenthtml += ' <div class="ttitle oswald"  onclick="javascript:window.location.href=\'details.html?id=' + data[key].article_id + ' \'"   >' + data[key].title + '</div> ';
             if (data[key].StandFirst != null) {
@@ -11,9 +15,22 @@
             }
             contenthtml += '<br class="clear"></div><div class="clear decoration"></div> ';
 
+            if (rownum == 4) {
+                contenthtml += '<div class="clear" align="center" style="width:100%;background-color:red" ><iframe marginheight="0" marginwidth="0" align="left" src="topbanner.html" width="310" height="260" frameborder=0></iframe></div>';
+                
+            }
 
+
+            rownum++;
         });
+
+        
+
+
+
         jQuery('#pagecontent').append(contenthtml);
+         
+        
 
 
         jQuery.getJSON('http://cdn.gdnonline.com/slider?jsoncallback=?', function (data) {

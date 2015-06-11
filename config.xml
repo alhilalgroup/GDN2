@@ -20,7 +20,7 @@
   <preference name="StatusBarOverlaysWebView" value="true" />
 
 
-  <icon src="platforms/android/icon.png" gap:platform="android" width="1024" height="1024" />
+  <icon src="icon.png" gap:platform="android" width="1024" height="1024" />
 
   <gap:splash src="platforms/android/assets/screen/screen-xhdpi-portrait.png" />
   <gap:splash src="platforms/android/assets/screen/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
