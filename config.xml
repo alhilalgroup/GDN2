@@ -17,10 +17,12 @@
 
   <gap:plugin name="com.phonegap.plugin.statusbar" />
   <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="SplashScreenDelay" value="8000"/>
 
 
   <icon src="icon.png" gap:platform="android" width="1024" height="1024" />
-  <preference name="splash-screen-duration" value="100000"/>
+ 
   <gap:splash src="screen/android/screen-xhdpi-portrait.png" />
   <gap:splash src="screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
   <gap:splash src="screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
